@@ -1,0 +1,59 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Dong Turing, DYB, LIC=LSNXV-PEE86-GKXBG-VVM1Q-F68JM-47Q91
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.37.0.0
+Toolchain Path:  D:\KEIL537\ARM\Compiler506\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.56.1.0
+ 
+<h2>Project:</h2>
+G:\1_Personal_File\��Ŀ\���¼��ȵ纸̨\Program\CHT11.0_COM1\Projects\MDK-ARM\atk_f103.uvprojx
+Project File Date:  01/26/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\KEIL537\ARM\Compiler506\Bin'
+Build target 'lcd'
+compiling main.c...
+..\..\Users\main.c(215): warning:  #223-D: function "Buzzer_Tone" declared implicitly
+              Buzzer_Tone(10); // 调用我们之前设计的非阻塞函数
+..\..\Users\main.c(170): warning:  #177-D: variable "last_enc_time"  was declared but never referenced
+      uint32_t last_enc_time = 0;
+..\..\Users\main.c(421): warning:  #177-D: variable "hue"  was declared but never referenced
+      uint8_t hue = position % 27; // 修改�?27，与实际灯数匹配
+..\..\Users\main.c(516): warning:  #223-D: function "Copy_Color" declared implicitly
+                      Copy_Color(&PixelBuf[i], &color);
+..\..\Users\main.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=23606 RO-data=15050 RW-data=132 ZI-data=1796  
+FromELF: creating hex file...
+"..\..\Output\atk_f103.axf" - 0 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.1.0.5.pack
+                Keil.STM32F1xx_DFP.1.0.5
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:/KEIL537/pack/Keil/STM32F1xx_DFP/1.0.5/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
